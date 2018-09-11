@@ -7,7 +7,7 @@ conn = sqlite3.connect('devopstalks.db')
 
 curr = conn.cursor()
 
-us = curr.execute('SELECT ID,MUSER_ID FROM MEDIUM_USERS')
+us = curr.execute('SELECT ID,MUSER_ID FROM MEDIUM_USERS WHERE MSTATUS = 1')
 us_result = us.fetchall()
 
 for user in us_result:
