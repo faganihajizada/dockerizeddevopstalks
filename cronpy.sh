@@ -1,5 +1,8 @@
 #!/bin/bash
+cd /DevOpstalks
+PATH=$PATH:/usr/bin/
+python mcron.py
 
-cd ~/bot
-source devopsbot/bin/activate
-python3.6 mcron.py
+
+
+
